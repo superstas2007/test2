@@ -73,6 +73,10 @@ class Users extends \yii\db\ActiveRecord
         ];
     }
 
+    /**
+     * get status title by code
+     * @return mixed
+     */
     public function getStatusTitle()
     {
         return $this->statusList[$this->status];

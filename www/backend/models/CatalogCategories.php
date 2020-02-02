@@ -54,6 +54,11 @@ class CatalogCategories extends \yii\db\ActiveRecord
         return $this->hasMany(CatalogProducts::className(), ['category_id' => 'id']);
     }
 
+    /**
+     * get category title
+     * @param $id
+     * @return false|null|string
+     */
     public static function getTitleById($id)
     {
         return static::find()->select('title')->andWhere(['id' => $id])->scalar();
