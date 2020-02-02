@@ -1,1 +1,5 @@
-# test2
+# test
+#
+# after migrations ->
+# user: 'root'
+# password: 'password'
